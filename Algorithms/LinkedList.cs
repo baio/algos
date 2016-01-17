@@ -177,6 +177,8 @@ namespace Algorithms
 
                 while (k != null)
                 {
+                    //wrong
+
                     if (k == n)
                     {
                         return k;
