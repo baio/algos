@@ -65,7 +65,26 @@ namespace Algorithms
 
         //4.4 Given a binary search tree, design an algorithm which creates a linked list of all the nodes at each depth (eg, if you have a tree with depth D, you’ll have D linked lists).
 
+        static Dictionary<int, List<Tree>> createLevelsList(Tree root, int level = 0) {
 
+            var res = new Dictionary<int, List<Tree>>();
+
+            var left = root.left;
+            var right = root.right;
+
+            if (left != null) {
+
+                //res.Add
+
+            }
+
+            var llist = createLevelsList(left, level + 1);
+            var rlist = createLevelsList(right, level + 1);
+
+            
+           
+            return res;
+        }
 
     }
 }
